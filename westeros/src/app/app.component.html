@@ -3,5 +3,14 @@ Hi I'm here . Welcome to {{title}}
 My counter is : {{counter}}
 
 <button (click)="bump()">Click Me</button>
+<button (click)="reveal()">Hide or Show</button>
+
+<div *ngIf="season_8">
+  Welcome to the season 8 premier !
+</div>
+
+<ul>
+  <li *ngFor="let character of characters">{{character}}</li>
+</ul>
 
 <router-outlet></router-outlet>
